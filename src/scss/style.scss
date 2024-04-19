@@ -1,0 +1,41 @@
+@import "./variables.scss";
+@import "normalize.css";
+
+html {
+    box-sizing: border-box;
+    // scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: #f5f5f5;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+body {
+    font-family: "ManropeRegular", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgb(46, 52, 63);
+}
+
+li {
+    list-style-type: none;
+}
+a,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+}
