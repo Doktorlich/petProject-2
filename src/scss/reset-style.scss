@@ -30,6 +30,11 @@ body {
 li {
     list-style-type: none;
 }
+ul,
+ol,
+li {
+    padding: 0;
+}
 a,
 a:active,
 a:link,

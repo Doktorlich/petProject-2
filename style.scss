@@ -1,6 +1,7 @@
+@import "normalize.css";
 @import "./src/scss/variables.scss";
 @import "./src/scss/reset-style.scss";
+@import "./src/scss/font.scss";
+@import "./src/scss/rubber-layout.scss";
 
-body {
-    background-color: red;
-}
+@import "./src/scss/header.scss";

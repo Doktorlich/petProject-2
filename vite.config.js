@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import legacy from "@vitejs/plugin-legacy";
 
-import pages from "./pages/pages.config";
+import pages from "./src/pages/pages.config";
 const pagesInput = {};
 pages.forEach(page => {
     pagesInput[page.name] = page.path;
