@@ -1,32 +1,134 @@
-.header {
-    width: 1920px;
-    // width: 100%;
-    background-color: aqua;
-    height: 975px;
-    &__inner {
-        .nav {
-            .menu {
-                // .menu__list
+//думаю адаптив осуществить при экране начиная с 1100px
 
+.header {
+    width: 100%;
+   
+    height: 975px;
+    background-image: url("public/images/jpg/header-bgr.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 200px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 975px;
+        .nav {
+            position: relative;
+            margin: 0 30px;
+            padding: 28px 0;
+            display: flex;
+            justify-content: space-between;
+            &::after {
+                position: absolute;
+                content: "";
+                border-bottom: 1px solid $white;
+                bottom: 0%;
+                width: 100%;
+            }
+            .wrapper-right-border {
+                position: relative;
+                width: 100%;
+
+                &::after {
+                    content: "";
+                    height: 124px;
+                    right: 0%;
+                    top: -28px;
+                    position: absolute;
+                    
+                    border-right: 1px solid $white;
+                }
+            }
+            .menu {
+                display: flex;
+                justify-content: space-between;
+             
                 &__list {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    max-width: 614px;
+                    margin-right: 80px;
                 }
 
                 // .menu__item
 
                 &__item {
+                    &:active {
+                    }
                 }
 
                 // .menu__link
 
                 &__link {
+                  
+                    display: block;
+                    font-family: $font-machina-reg;
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    white-space: nowrap;
+                    text-transform: lowercase;
+                    &:hover {
+                        color: $white-blue;
+
+                        border-radius: 10px;
+                    }
+                    &:active {
+                        border: 1px solid $main-blue;
+                    }
                 }
             }
             .btns-list {
+                display: flex;
+                justify-content: space-between;
+
+                margin-left: 80px;
+                //95+62+254=411
+                width: 100%;
+                max-width: 411px;
                 .switch-langue {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
                     &__name {
+                        color: $white;
                     }
                 }
-                &__btn {
+                &__link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    //btn
+                    width: 254px;
+                    height: 59px;
+                    border-radius: 10px;
+                    background: $main-blue;
+
+                    // text
+                    color: $white;
+                    font-family: $font-machina-reg;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    cursor: pointer;
+                    &:hover {
+                    }
+                    &:active {
+                        transform: scale(0.99);
+                    }
+
+                    .img-arrow-link {
+                        outline: 2px dashed $white;
+                    }
                 }
             }
         }
@@ -34,14 +136,55 @@
 }
 .down-block {
     // .down-block__circle-btn
+    padding-bottom: 50px;
+
     .header__h1 {
+        position: relative;
+        width: 100%;
+        max-width: 892px;
+        margin-bottom: 100px;
+
+        color: $white;
+        font-family: $font-machina-ub;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 130%;
+        z-index: 0;
+        &::before {
+            position: absolute;
+            top: 24.6%;
+            content: "";
+            background-color: $main-blue;
+            width: 100%;
+            max-width: 876px;
+            height: 65px;
+            z-index: -1;
+        }
     }
     .down-block__circle-btn {
     }
 }
 
 .circle-btn {
+    width: 280px;
+    height: 280px;
+    background-color: $opacity-0;
+    border-radius: 100%;
+    border: 2px solid $white;
+    color: $white;
+
+    font-family: $font-machina-reg;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+
+    text-transform: uppercase;
+    cursor: pointer;
+    &:active {
+        background: $main-blue;
+    }
 }
 
 .container {
+    padding: 0 150px;
 }
