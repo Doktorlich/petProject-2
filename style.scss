@@ -6,3 +6,14 @@
 
 @import "./src/scss/header.scss";
 @import "./src/scss/main/section-goals.scss";
+@import "./src/scss/main/section-choose-us.scss";
+@import "./src/scss/main/section-work.scss";
+@import "./src/scss/main/section-technologies.scss";
+@import "./src/scss/main/section-industries.scss";
+@import "./src/scss/main/section-with-us.scss";
+
+.container > .section {
+    width: 100%;
+    padding: 0 150px;
+}
+

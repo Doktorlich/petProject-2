@@ -2,7 +2,7 @@
 
 .header {
     width: 100%;
-   
+
     height: 975px;
     background-image: url("public/images/jpg/header-bgr.jpeg");
     background-repeat: no-repeat;
@@ -37,14 +37,14 @@
                     right: 0%;
                     top: -28px;
                     position: absolute;
-                    
+
                     border-right: 1px solid $white;
                 }
             }
             .menu {
                 display: flex;
                 justify-content: space-between;
-             
+
                 &__list {
                     display: flex;
                     justify-content: space-between;
@@ -63,7 +63,6 @@
                 // .menu__link
 
                 &__link {
-                  
                     display: block;
                     font-family: $font-machina-reg;
                     color: $white;
@@ -135,6 +134,7 @@
     }
 }
 .down-block {
+    margin-left: 150px;
     // .down-block__circle-btn
     padding-bottom: 50px;
 
@@ -183,8 +183,4 @@
     &:active {
         background: $main-blue;
     }
-}
-
-.container {
-    padding: 0 150px;
 }

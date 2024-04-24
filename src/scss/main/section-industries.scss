@@ -1,0 +1,63 @@
+.industries {
+    // .industries__inner
+
+    &__inner {
+        width: 1620px;
+    }
+
+    // .industries__list
+
+    &__list {
+        display: flex;
+        gap: 51px;
+    }
+
+    // .industries__items
+
+    &__items {
+        height: 460px;
+    }
+
+    // .industries__img-item
+
+    &__img-item {
+        width: 100px;
+        height: 100px;
+        border: 1.5px dashed $dark-blue-opc-50;
+    }
+
+    // .industries__item-title
+
+    &__item-title {
+        color: $dark-blue;
+        font-family: $font-machina-reg;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    // .industries__line
+
+    &__line {
+        height: 1px;
+        border: none;
+        border-top: 1px solid $dark-blue;
+        margin-bottom: 40.5px;
+    }
+
+    // .industries__desc
+
+    &__desc {
+        margin: 0;
+
+        color: $dark-blue-opc-70;
+        font-family: $font-gilroy-reg;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+.section {
+}
+.section-h2 {
+}

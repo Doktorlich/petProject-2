@@ -1,0 +1,123 @@
+.choose-us {
+    // .choose-us__inner
+    &__inner {
+    }
+    // .choose-us__header-block
+    &__header-block {
+        margin-bottom: 150px;
+    }
+    // .choose-us__desc
+    &__desc {
+        width: 100%;
+        max-width: 726px;
+        height: 108px;
+
+        color: $dark-blue;
+        font-family: $font-gilroy-reg;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+.tab {
+    // .tab__line
+    display: flex;
+
+    &__lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px solid $dark-blue-opc-14;
+        background-color: $dark-blue-opc-14;
+        height: 510px;
+    }
+    &__line-span {
+    }
+    // .tab__list-items
+
+    &__list-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: 47.5px;
+        width: 305px;
+
+        padding-top: 6px;
+        padding-bottom: 4.5px;
+    }
+
+    // .tab__item
+
+    &__item {
+        color: $dark-blue-opc-30;
+        font-family: $font-machina-reg;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    // .tab__list-contents
+
+    &__list-contents {
+        width: 1116px;
+        height: 459px;
+        box-sizing: border-box;
+        border: 1px solid $dark-blue-opc-50;
+        border-radius: 70px;
+        padding: 50px;
+    }
+
+    // .tab__content-item
+
+    &__content-item {
+        max-width: 1016px;
+    }
+
+    // .tab__content-title
+
+    &__content-title {
+        margin: 0;
+
+        color: $main-blue;
+        font-family: $font-machina-reg;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 39px;
+        margin-bottom: 50px;
+    }
+
+    // .tab__content-desc
+
+    &__content-desc {
+        margin: 0;
+        color: rgba(47, 53, 63, 0.7);
+        font-family: $font-gilroy-reg;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+.active-item {
+    color: $main-blue;
+    font-family: $font-machina-reg;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+.active-span {
+    display: block;
+    height: 60px;
+    border: 5px solid $main-blue;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section {
+}
+.section-h2 {
+}
