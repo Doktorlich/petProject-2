@@ -1,6 +1,7 @@
 .choose-us {
     // .choose-us__inner
     &__inner {
+        width: 1620px;
     }
     // .choose-us__header-block
     &__header-block {
@@ -61,6 +62,7 @@
     // .tab__list-contents
 
     &__list-contents {
+        margin-left:auto ;
         width: 1116px;
         height: 459px;
         box-sizing: border-box;

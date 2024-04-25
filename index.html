@@ -20,7 +20,7 @@
           <div class="menu">
             <a href="index.html"><img src="public/images/svg/logo.svg" alt="SUPPORT GROUP"></a>
             <ul class="menu__list">
-              <li class="menu__item"><a href="src/pages/page1/page1.html" class="menu__link">about</a></li>
+              <li class="menu__item"><a href="/src/pages/about/about.html" class="menu__link">about</a></li>
               <li class="menu__item"><a href="#our-services" class="menu__link">our services</a></li>
               <li class="menu__item"><a href="#job-openings" class="menu__link">job openings</a></li>
             </ul>
@@ -46,8 +46,9 @@
   </header>
 
   <main class="main">
-    <div class="container">
-      <section class="goals section">
+
+    <section class="goals section">
+      <div class="container">
         <div class="goals__inner">
           <h2 class="section-h2">What are our goals?</h2>
           <ul class="goals__list">
@@ -84,9 +85,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="choose-us section">
+
+    <section class="choose-us section">
+      <div class="container">
         <div class="choose-us__inner">
           <div class="choose-us__header-block">
             <h2 class="section-h2">Why choose us?</h2>
@@ -135,9 +139,12 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="work section">
+
+    <section class="work section">
+      <div class="container">
         <div class="work__inner">
           <h2 class="section-h2">How we work?</h2>
           <ul class="work__list">
@@ -173,8 +180,12 @@
           </ul>
           <button type="button" class="work__btn circle-btn">Learn more</button>
         </div>
-      </section>
-      <section class="technologies section">
+      </div>
+    </section>
+
+
+    <section class="technologies section">
+      <div class="container">
         <div class="technologies__inner">
           <h2 class="section-h2">Used technologies</h2>
           <p class="technologies__desc">Fill the gaps in your competencies by setting up a remote IT team. We will
@@ -221,9 +232,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="industries section">
+
+    <section class="industries section">
+      <div class="container">
         <div class="industries__inner">
           <h2 class="section-h2">Industries</h2>
           <ul class="industries__list">
@@ -253,50 +267,129 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="with-us section">
-        <div class="with-us__inner">
-          <div class="with-us__first-block first-block">
-            <h2 class="first-block__h2">Get in touch with us</h2>
-            <div class="first-block__right-container">
-              <p class="first-block__desc">Simply fill in your Email in our contact form or get in touch with us by our
-                email - <b><a href="itsupportgroup@gmail.com" class="first-block__link">itsupportgroup@gmail.com
-                  </a></b>- , and
-                one of our experts will contact you shortly.
-                This could be the beginning of a wonderful collaboration and the easiest way to acquire a
-                highly-experienced team.</p>
-              <button type="button" class="btn-with-us">Download the brief <span class="btn-with-us__img-item"><img
-                    src="public/images/svg/withus-btn-img-1.svg" alt="" class="btn-with-us__img"></span></button>
-            </div>
+      </div>
+    </section>
+
+
+    <section class="with-us section">
+      <div class="with-us__inner">
+        <div class="with-us__first-block first-block">
+          <h2 class="first-block__h2">Get in touch with us</h2>
+          <div class="first-block__right-container">
+            <p class="first-block__desc">Simply fill in your Email in our contact form or get in touch with us by our
+              email - <b><a href="itsupportgroup@gmail.com" class="span-mail">itsupportgroup@gmail.com
+                </a></b>- , and
+              one of our experts will contact you shortly.
+              This could be the beginning of a wonderful collaboration and the easiest way to acquire a
+              highly-experienced team.</p>
+            <button type="button" class="btn-with-us">Download the brief <span class="btn-with-us__img-item"><img
+                  src="public/images/svg/withus-btn-img-1.svg" alt="" class="btn-with-us__img"></span></button>
           </div>
-          <form class="with-us__second-block second-block">
-            <div class="second-block__left-container">
-              <input type="text" class="second-block__full-name second-block__inp" placeholder="Enter your Full Name">
-              <input type="email" class="second-block__email second-block__inp" placeholder="Enter your Email">
-              <input type="tel" class="second-block__tel second-block__inp" placeholder="Enter your Phone Number">
-              <div class="btn-wrapper">
-                <label for="second-block__submit"><img src="public/images/svg/icon-arrow-blue-button.svg"
-                    class="btn-wrapper__img" alt=""></label>
-                <input type="submit" class="second-block__submit  second-block__inp" value="Submit"
-                  name="second-block__submit" id="second-block__submit">
-              </div>
-
-
-            </div>
-            <div class="second-block__right-container">
-              <input type="text" class="second-block__describe  second-block__inp" placeholder="Describe your project">
-              <input type="text" class="second-block__upload-file  second-block__inp"
-                placeholder="Upload file (max file size is 30 MB)">
-              <input type="file" class="second-block__upload-file-btn  second-block__inp" style="display:none">
-            </div>
-          </form>
         </div>
-      </section>
-    </div>
+        <form class="with-us__second-block second-block">
+          <div class="second-block__left-container">
+            <input type="text" class="second-block__full-name second-block__inp" placeholder="Enter your Full Name">
+            <input type="email" class="second-block__email second-block__inp" placeholder="Enter your Email">
+            <input type="tel" class="second-block__tel second-block__inp" placeholder="Enter your Phone Number">
+            <div class="btn-wrapper">
+              <label for="second-block__submit"><img src="public/images/svg/icon-arrow-blue-button.svg"
+                  class="btn-wrapper__img" alt=""></label>
+              <input type="submit" class="second-block__submit  second-block__inp" value="Submit"
+                name="second-block__submit" id="second-block__submit">
+            </div>
+
+
+          </div>
+          <div class="second-block__right-container">
+            <input type="text" class="second-block__describe  second-block__inp" placeholder="Describe your project">
+
+            <div class="upload-btn-wrapper">
+              <input type="text" class="second-block__upload-file  second-block__inp"
+                placeholder="Upload archive (max size is 30 MB)" disabled>
+              <img src="public/images/svg/withus-inp-img-1.svg" alt="" class="upload-btn-wrapper__img">
+              <input type="file" class="second-block__upload-file-btn  second-block__inp" style="display:none"
+                name="second-block__upload-file-btn ">
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
 
   </main>
 
-  <footer class=" footer">
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer-main">
+        <div class="footer-main__left-container">
+          <img src="public/favicon/favicon.svg" class="footer-main__logo" alt="it">
+
+          <div class="footer-main__wrapper"> <a href="itsupportgroup@gmail.com"
+              class="footer-main__mail">itsupportgroup@gmail.com</a>
+            <ul class="media-icons__list">
+              <li class="media-icons__item">
+                <a href="#instagram" class="media-icons__link">
+                  <img src="public/images/svg/icon-insta.svg" alt="" class="media-icons__img">
+                </a>
+              </li>
+              <li class="media-icons__item">
+                <a href="#watsup" class="media-icons__link">
+                  <img src="public/images/svg/icon-watsup.svg" alt="" class="media-icons__img">
+                </a>
+              </li>
+              <li class="media-icons__item">
+                <a href="#facebook" class="media-icons__link">
+                  <img src="public/images/svg/icon-f.svg" alt="" class="media-icons__img">
+                </a>
+              </li>
+              <li class="media-icons__item">
+                <a href="#in" class="media-icons__link">
+                  <img src="public/images/svg/icon-in.svg" alt="" class="media-icons__img">
+                </a>
+              </li>
+            </ul>
+            <a class="btns-list__link">
+              Contact us
+              <img src="public/images/svg/icon-arrow-button.svg" alt="arrow" class="img-arrow-link">
+            </a>
+          </div>
+        </div>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <p class="contact-list__title">our offices</p>
+          </li>
+          <li class="contact-list__item">
+            <p class="contact-list__p">In Minsk</p>
+            <p class="contact-list__p">+375 (29) 675-12-22</p>
+            <p class="contact-list__p">44 Karl Liebknecht Street, floor 5, office 522</p>
+          </li>
+          <li class="contact-list__item">
+            <p class="contact-list__p">In Vilnius</p>
+            <p class="contact-list__p">+370 (52) 654-280-28</p>
+            <p class="contact-list__p">44 Karl Liebknecht Street, floor 5, office 522</p>
+          </li>
+        </ul>
+        <ul class="services-list">
+          <li class="services-list__item">services</li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">Technical Support</a> </li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">Frontend Development</a> </li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">Backend Development</a> </li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">Mobile app development</a> </li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">UI/UX Design</a> </li>
+          <li class="services-list__item"><a href="#anchor" class="services-list__link">Software Development</a> </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="basement">
+      <ul class="basement__list">
+        <li class="basement__item">Development by IT Support Group.</li>
+        <li class="basement__item">Data Privacy.</li>
+        <li class="basement__item">© 2023 IT Support Group</li>
+      </ul>
+    </div>
   </footer>
 
 </body>

@@ -1,0 +1,222 @@
+.footer {
+    // .fotter__inner
+    margin: 50px 30px;
+   
+
+    &__inner {
+        padding: 50px 120px;
+        border-top: 3px solid $dark-blue-opc-50;
+        border-bottom: 3px solid $dark-blue-opc-50;
+    }
+}
+
+.footer-main {
+    // .footer-main__left-container
+    display: flex;
+
+    &__left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 298px;
+        height: 395px;
+        margin-right: auto;
+    }
+
+    // .footer-main__logo
+
+    &__logo {
+        width: 39px;
+        height: 40px;
+    }
+    .footer-main__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 255px;
+    }
+    // .footer-main__mail
+
+    &__mail {
+        display: block;
+
+        color: $main-blue;
+        font-family: $font-gilroy-sb;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+        text-decoration-line: underline !important;
+    }
+}
+.media-icons {
+    // .media-icons__list
+
+    &__list {
+        position: relative;
+        display: flex;
+        gap: 10px;
+
+        width: 270px;
+        height: 60px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-top: 0.5px dashed $dark-blue-opc-70;
+            border-bottom: 0.5px dashed $dark-blue-opc-70;
+            width: 270px;
+            height: 60px;
+            pointer-events: none;
+        }
+    }
+
+    // .media-icons__item
+
+    &__item {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-left: 0.5px dashed $dark-blue-opc-70;
+            border-right: 0.5px dashed $dark-blue-opc-70;
+            width: 60px;
+            height: 60px;
+            pointer-events: none;
+        }
+        &:not(:first-child):not(:last-child) {
+            &::after {
+                content: "";
+                position: absolute;
+
+                width: 45px;
+                height: 45px;
+                border: 0.5px dashed $dark-blue-opc-70;
+                top: 7.5px;
+                left: 7.5px;
+                pointer-events: none;
+            }
+        }
+    }
+
+    // .media-icons__link
+
+    &__link {
+    }
+
+    // .media-icons__img
+
+    &__img {
+    }
+}
+.btns-list {
+    // .btns-list__link
+
+    &__link {
+    }
+}
+.img-arrow-link {
+}
+////////////////////////// 2й блок мейна
+.contact-list {
+    // .contact-list__item
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+    margin-right: auto;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 400px;
+        margin-bottom: 50px;
+        &:not(:first-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .contact-list__title
+
+    &__title {
+        color: $dark-blue;
+        font-family: $font-machina-reg;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19px;
+        margin: 0;
+    }
+
+    // .contact-list__p
+
+    &__p {
+        margin: 0;
+
+        color: $dark-blue-opc-50;
+        font-family: $font-gilroy-reg;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        &:first-child {
+            color: $main-blue;
+        }
+    }
+
+    // .contact-list__name
+}
+//////////////////////////////3й блок мейна
+.services-list {
+    // .services-list__item
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    height: 363px;
+    margin: 0;
+    &__item {
+        margin-top: 11px;
+
+        color: $dark-blue;
+        font-family: $font-machina-reg;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    // .services-list__link
+
+    &__link {
+        color: $main-blue;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+///////////////подвал
+.basement {
+    // .basement__list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    // .basement__item
+
+    &__item {
+        color: $dark-blue-opc-50;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}

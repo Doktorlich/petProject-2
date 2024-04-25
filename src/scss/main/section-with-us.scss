@@ -1,18 +1,14 @@
 .section {
 }
-.container > .section {
-    padding: 0 150px;
-    &:last-child {
-        padding: 0 30px;
-    }
-}
+
 .with-us {
+    margin-left: 30px;
     // .with-us__inner
 
     &__inner {
         width: 1860px;
         background: $gradient-blue-blue;
-        padding: 100px 120px 100px 120px;
+        padding: 100px 120px;
         border-radius: 70px;
     }
     // .with-us__first-block
@@ -22,6 +18,7 @@
     }
     .first-block {
         // .first-block__h2
+      
         &__h2 {
             color: $white;
             font-family: $font-machina-reg;
@@ -50,11 +47,6 @@
             margin-bottom: 49px;
         }
         // .first-block__link
-        &__link {
-            color: $white;
-            font-family: $font-gilroy-reg;
-            text-decoration: underline;
-        }
     }
     //судя по всему сюда нужно будет подключать файл для загрузки
     .btn-with-us {
@@ -112,7 +104,11 @@
             border-bottom: 1px solid $white;
             background: opacify($color: #00000000, $amount: 0);
 
-            color: opacify($color: #00000040, $amount: 0);
+            font-family: Neue Machina;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 150%;
+            color: $white;
             font-family: Neue Machina;
             font-size: 32px;
             font-weight: 400;
@@ -176,8 +172,30 @@
         // .second-block__upload-file
         &__upload-file {
         }
+
         // .second-block__upload-file-btn
         &__upload-file-btn {
         }
+        .upload-btn-wrapper {
+            position: relative;
+
+            &__img {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
     }
+}
+
+b .span-mail {
+ 
+    color: $white;
+    font-family: $font-gilroy-reg;
+    text-decoration: underline;
+
 }

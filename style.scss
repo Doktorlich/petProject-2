@@ -11,9 +11,32 @@
 @import "./src/scss/main/section-technologies.scss";
 @import "./src/scss/main/section-industries.scss";
 @import "./src/scss/main/section-with-us.scss";
+@import "./src/scss/footer.scss";
 
-.container > .section {
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+.container {
     width: 100%;
     padding: 0 150px;
 }
 
+.section {
+    margin-bottom: 250px;
+}

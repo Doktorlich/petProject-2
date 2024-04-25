@@ -1,6 +1,4 @@
-.section {
-    margin-bottom: 250px;
-}
+
 .section-h2 {
     width: 100%;
     max-width: 609px;
@@ -14,10 +12,11 @@
 }
 .goals {
     display: flex;
-    justify-content: center;
+ 
     color: $dark-blue;
     // .goals__list
     &__inner {
+        width: 1620px;
     }
 
     &__list {

@@ -1,5 +1,3 @@
-//думаю адаптив осуществить при экране начиная с 1100px
-
 .header {
     width: 100%;
 
@@ -23,7 +21,7 @@
             &::after {
                 position: absolute;
                 content: "";
-                border-bottom: 1px solid $white;
+                border-bottom: 1px solid $dark-blue-opc-50;
                 bottom: 0%;
                 width: 100%;
             }
@@ -37,8 +35,7 @@
                     right: 0%;
                     top: -28px;
                     position: absolute;
-
-                    border-right: 1px solid $white;
+                    border-right: 1px solid $dark-blue-opc-50;
                 }
             }
             .menu {
@@ -63,32 +60,18 @@
                 // .menu__link
 
                 &__link {
-                    position: relative;
                     display: block;
                     font-family: $font-machina-reg;
-                    color: $white;
+                    color: $main-blue;
                     font-size: 24px;
                     font-weight: 400;
                     line-height: 23px;
                     white-space: nowrap;
                     text-transform: lowercase;
-
                     &:hover {
                         color: $white-blue;
-                    }
-                    &:active {
-                        position: relative;
-                        &::after {
-                            position: absolute;
-                            content: "";
-                            border: 1px solid $white;
 
-                            width: 150%;
-                            height: 190%;
-                            top: -40%;
-                            left: -25%;
-                            border-radius: 15px;
-                        }
+                        border-radius: 10px;
                     }
                 }
             }
@@ -144,53 +127,18 @@
         }
     }
 }
-.down-block {
-    // .down-block__circle-btn
-    padding-bottom: 50px;
 
-    .header__h1 {
-        position: relative;
-        width: 100%;
-        max-width: 892px;
-        margin-bottom: 100px;
+.item-nav-active {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        border: 1px solid $main-blue;
 
-        color: $white;
-        font-family: $font-machina-ub;
-        font-size: 50px;
-        font-weight: 800;
-        line-height: 130%;
-        z-index: 0;
-        &::before {
-            position: absolute;
-            top: 24.6%;
-            content: "";
-            background-color: $main-blue;
-            width: 100%;
-            max-width: 876px;
-            height: 65px;
-            z-index: -1;
-        }
-    }
-    .down-block__circle-btn {
-    }
-}
-
-.circle-btn {
-    width: 280px;
-    height: 280px;
-    background-color: $opacity-0;
-    border-radius: 100%;
-    border: 2px solid $white;
-    color: $white;
-
-    font-family: $font-machina-reg;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 130%;
-
-    text-transform: uppercase;
-    cursor: pointer;
-    &:active {
-        background: $main-blue;
+        width: 150%;
+        height: 190%;
+        top: -40%;
+        left: -25%;
+        border-radius: 15px;
     }
 }
