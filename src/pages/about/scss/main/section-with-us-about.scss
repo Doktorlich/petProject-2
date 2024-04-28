@@ -1,0 +1,201 @@
+.section {
+}
+
+.with-us {
+    margin-left: 30px;
+    // .with-us__inner
+
+    &__inner {
+        width: 1860px;
+        background: $gradient-blue-blue;
+        padding: 100px 120px;
+        border-radius: 70px;
+    }
+    // .with-us__first-block
+    &__first-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .first-block {
+        // .first-block__h2
+      
+        &__h2 {
+            color: $white;
+            font-family: $font-machina-reg;
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 130%;
+            width: 645px;
+            height: 260px;
+            margin: 0;
+        }
+        // .first-block__right-container
+        &__right-container {
+            padding-top: 33px;
+        }
+        // .first-block__desc
+        &__desc {
+            width: 700px;
+            height: 180px;
+
+            color: $white;
+            font-family: $font-gilroy-reg;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 150%;
+            margin: 0;
+            margin-bottom: 49px;
+        }
+        // .first-block__link
+    }
+    //судя по всему сюда нужно будет подключать файл для загрузки
+    .btn-with-us {
+        // .btn-with-us__img-item
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        width: 350px;
+        height: 58px;
+        text-transform: uppercase;
+        color: $white;
+        font-family: Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19px;
+        background-color: $opacity-0;
+        border: 1px solid $white;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:active {
+            background-color: $white;
+            color: $main-blue;
+            fill: $main-blue;
+            // узнать как стилизовать из под css svg файлы
+        }
+        &__img-item {
+        }
+        // .btn-with-us__img
+        &__img {
+        }
+    }
+
+    //-------------------------------------------------------------------second
+    &__second-block {
+    }
+
+    .second-block {
+        // .second-block__left-container
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+
+        &__left-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50.5px;
+        }
+        &__inp {
+            width: 700px;
+            height: 61.5px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $white;
+            background: opacify($color: #00000000, $amount: 0);
+
+            font-family: Neue Machina;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 150%;
+            color: $white;
+            font-family: Neue Machina;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        // .second-block__full-name
+        &__full-name {
+        }
+
+        // .second-block__email
+        &__email {
+        }
+        // .second-block__
+        &__tel {
+        }
+        // .second-block__submit
+        .btn-wrapper {
+            position: relative;
+            width: 205px;
+            height: 58px;
+            .btn-wrapper__img {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: 40px;
+                top: 17px;
+                border: 1px dashed $main-blue;
+            }
+        }
+
+        &__submit {
+            padding: 17px 40px;
+            width: 205px;
+            height: 58px;
+            border-radius: 10px;
+            background: $white;
+
+            color: $main-blue;
+            font-family: $font-machina-reg;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 19px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-align: left;
+            &:active {
+                background-color: $main-blue;
+                color: $white;
+                border: 1px solid $white;
+            }
+        }
+        // .second-block__right-container
+        &__right-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50.5px;
+        }
+        // .second-block__describe
+        &__describe {
+        }
+        // .second-block__upload-file
+        &__upload-file {
+        }
+
+        // .second-block__upload-file-btn
+        &__upload-file-btn {
+        }
+        .upload-btn-wrapper {
+            position: relative;
+
+            &__img {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}
+
+b .span-mail {
+ 
+    color: $white;
+    font-family: $font-gilroy-reg;
+    text-decoration: underline;
+
+}

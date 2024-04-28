@@ -1,0 +1,111 @@
+.who-me {
+    margin-bottom: 300px;
+    &__inner {
+        width: 1620px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+    //--------------------------------- 2й блок
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 752px;
+        height: 455px;
+    }
+    &__desc-item {
+        margin: 0;
+        color: $dark-blue-opc-70;
+        font-family: $font-gilroy-reg;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .achievements {
+        width: 716px;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 358px;
+            height: 236px;
+            border: 1px solid $middle-grey;
+            border-radius: 40px;
+            padding: 50px 0px 50px 50px;
+        }
+        &__item-active {
+            position: relative;
+            top: 20px;
+            right: 20px;
+
+            border-radius: 40px;
+            border-radius: 40px;
+            background: $gradient-72-172;
+            opacity: 0.5;
+            border: none;
+            .achievements__num-title {
+                color: $white;
+            }
+            .achievements__desc {
+                color: $white-opc-70;
+            }
+        }
+        &__num-title {
+            color: $main-blue;
+            font-family: $font-machina-reg;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 58px;
+        }
+
+        &__desc {
+            color: $dark-blue-opc-70;
+            font-family: $font-gilroy-reg;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+    //--------------------------------- 3й блок
+    .people {
+        width: 1620px;
+        height: 180px;
+        &__list {
+            display: flex;
+            position: relative;
+        }
+
+        &__item {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 50%;
+
+            &:nth-child(1n) {
+                background: rgb(47, 53, 63);
+            }
+            &:nth-child(2n) {
+                background: rgb(193, 194, 197);
+            }
+            &:nth-child(3n) {
+                background: rgb(46, 43, 208);
+            }
+        }
+
+        &__img {
+        }
+    }
+}
+//--------------------------------- 1й блок
+.section-h2 {
+}

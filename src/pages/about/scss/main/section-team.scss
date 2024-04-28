@@ -1,0 +1,93 @@
+.team {
+    margin: 0 30px;
+    margin-bottom: 300px;
+    &__inner {
+        width: 1860px;
+        .section-h2 {
+            margin: 0 120px;
+        }
+    }
+
+    //3 блок
+    &__img-block {
+        position: relative;
+        width: 1860px;
+        height: 913px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            width: 100%;
+            height: 100%;
+            width: 1852px;
+            height: 905px;
+            border: 1px dashed $middle-grey-opc-50;
+        }
+    }
+    &__img {
+        width: 1860px;
+        height: 913px;
+    }
+    //4 блок
+    .peculiarities {
+        margin: 0 120px;
+        margin-top: 100px;
+        width: 1620px;
+        height: 568px;
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 468px;
+        }
+
+        &__number {
+            color: $main-blue;
+            font-family: $font-machina-reg;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 58px;
+            margin-bottom: 100px;
+        }
+
+        &__title {
+            color: rgb(47, 53, 63);
+            font-family: $font-machina-reg;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            color: rgba(47, 53, 63, 0.7);
+            font-family: $font-gilroy-reg;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        &__vert-line {
+            height: 568px;
+            border: 1px solid $main-blue;
+            background-color: $main-blue;
+        }
+    }
+}
+//2 блок
+.section-desc {
+    width: 715px;
+    margin: 0 120px;
+    margin-left: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    color: $dark-blue-opc-70;
+    font-family: $font-gilroy-reg;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+}

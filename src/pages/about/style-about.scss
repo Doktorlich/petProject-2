@@ -1,0 +1,32 @@
+@import "normalize.css";
+@import "./scss/variables.scss";
+@import "scss/font.scss";
+@import "scss/reset-style.scss";
+
+@import "scss/header-about.scss";
+@import "scss/footer-about.scss";
+
+@import "scss/main/section-reviews";
+@import "scss/main/section-team";
+@import "scss/main/section-timeline";
+@import "scss/main/section-who-me";
+@import "scss/main/section-with-us-about";
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}

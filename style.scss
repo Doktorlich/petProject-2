@@ -40,3 +40,33 @@ body {
 .section {
     margin-bottom: 250px;
 }
+
+body {
+    position: relative;
+    z-index: 1;
+}
+.scroll-arrow-top {
+    cursor: pointer;
+}
+.scroll-arrow-top__svg {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-90deg);
+    z-index: 10;
+    bottom: 50vh;
+    right: 0;
+    &:hover {
+        background-color: $dark-blue-opc-70;
+    }
+}
+.block-hidden-lazy {
+
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+.hidden-arrow-scroll {
+    opacity: 0;
+    visibility: hidden;
+}

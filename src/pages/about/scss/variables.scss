@@ -1,7 +1,10 @@
 $main-blue: #2e2bd0; //rgb(46, 43, 208);
 $white: #fff;
+$white-opc-70: #ffffff70;
+
 $opacity-0: #ffffff00;
 $opacity-50: #ffffff50;
+
 $dark-grey: #95989d;
 
 $middle-grey: #93969b; //rgb(147, 150, 155)
@@ -17,6 +20,7 @@ $gradient-blue-blue: linear-gradient(
     rgb(46, 43, 208) -82.504%,
     rgb(120, 118, 242) 148.77%
 );
+$gradient-72-172: linear-gradient(40.34deg, rgb(46, 43, 208) -72.961%, rgb(120, 118, 242) 172.408%);
 $middle-blue: #9695e7;
 $white-blue: #cbcaf3; //rgb(203, 202, 243)
 

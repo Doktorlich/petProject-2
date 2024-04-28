@@ -7,7 +7,9 @@ html {
 *::before {
     box-sizing: inherit;
 }
-
+*{
+    margin: 0;
+}
 body {
     overflow: auto;
 }

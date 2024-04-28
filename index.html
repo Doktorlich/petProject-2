@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0m maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="/favicon/favicon.svg" type="image/x-icon">
   <script defer type="module" src="./main.js"></script>
   <title>SUPPORT GROUP</title>
@@ -15,6 +15,7 @@
   <header class="header">
 
     <div class="header__inner">
+
       <nav class="nav">
         <div class="wrapper-right-border">
           <div class="menu">
@@ -30,9 +31,24 @@
           <div class="switch-langue">
             <!-- думаю будет что то вроде аккордеона  -->
             <p class="switch-langue__name">EN</p>
-            <img src="public/images/svg/linear-arrow-square.svg" alt="arrow">
+            <!-- SVG -->
+            <svg class="svg-langue-arrow" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs />
+              <rect id="vuesax/linear/arrow-square-down" width="20.000000" height="20.000000" fill="#FFFFFF"
+                fill-opacity="0" />
+              <path id="Vector"
+                d="M12.5 18.33C16.66 18.33 18.33 16.66 18.33 12.5L18.33 7.5C18.33 3.33 16.66 1.66 12.5 1.66L7.5 1.66C3.33 1.66 1.66 3.33 1.66 7.5L1.66 12.5C1.66 16.66 3.33 18.33 7.5 18.33L12.5 18.33Z"
+                stroke="#ffffff" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" />
+              <path id="Vector" d="M7.05 8.86L10 11.8L12.94 8.86" stroke="#ffffff" stroke-opacity="1.000000"
+                stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+              <g opacity="0.000000" />
+            </svg>
+            <!-- SVG -->
+
           </div>
-          <a class="btns-list__link">Contact us <img src="public/images/svg/icon-arrow-button.svg" alt="arrow"
+
+          <a class="btns-list__link">Contact us <img src="/public/images/svg/icon-arrow-button.svg" alt="arrow"
               class="img-arrow-link"></a>
         </div>
       </nav>
@@ -283,7 +299,7 @@
               This could be the beginning of a wonderful collaboration and the easiest way to acquire a
               highly-experienced team.</p>
             <button type="button" class="btn-with-us">Download the brief <span class="btn-with-us__img-item"><img
-                  src="public/images/svg/withus-btn-img-1.svg" alt="" class="btn-with-us__img"></span></button>
+                  src="/public/images/svg/withus-btn-img-1.svg" alt="" class="btn-with-us__img"></span></button>
           </div>
         </div>
         <form class="with-us__second-block second-block">
@@ -292,7 +308,7 @@
             <input type="email" class="second-block__email second-block__inp" placeholder="Enter your Email">
             <input type="tel" class="second-block__tel second-block__inp" placeholder="Enter your Phone Number">
             <div class="btn-wrapper">
-              <label for="second-block__submit"><img src="public/images/svg/icon-arrow-blue-button.svg"
+              <label for="second-block__submit"><img src="/public/images/svg/icon-arrow-blue-button.svg"
                   class="btn-wrapper__img" alt=""></label>
               <input type="submit" class="second-block__submit  second-block__inp" value="Submit"
                 name="second-block__submit" id="second-block__submit">
@@ -390,7 +406,22 @@
         <li class="basement__item">© 2023 IT Support Group</li>
       </ul>
     </div>
+
   </footer>
+
+  <div class="scroll-arrow-top hidden-arrow-scroll">
+    <svg class="scroll-arrow-top__svg" width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs />
+      <rect id="vuesax/linear/arrow-square-down" width="50.000000" height="50.000000" fill="#FFFFFF" fill-opacity="0" />
+      <path id="Vector" d=" M31.25 45.83C41.66 45.83 45.83 41.66 45.83 31.25L45.83 18.75C45.83 8.33 41.66 4.16 31.25
+    4.16L18.75 4.16C8.33 4.16 4.16 8.33 4.16 18.75L4.16 31.25C4.16 41.66 8.33 45.83 18.75 45.83L31.25
+    45.83Z" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
+      <path id="Vector" d="M21.33 33.18L28.66 25.83L21.33 18.47" stroke="#2E2BD0" stroke-opacity="1.000000"
+        stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round" />
+      <g opacity="0.000000" />
+    </svg>
+  </div>
 
 </body>
 
