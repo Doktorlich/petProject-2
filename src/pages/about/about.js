@@ -79,3 +79,73 @@ document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") prevSlide();
     if (e.key === "ArrowRight") nextSlide();
 });
+////////////////////////////////////////////////////////////////////////////////
+
+const langueActive = document.querySelector(".switch-langue__name");
+//родитель для делегирования событий при выборе языка
+const langueList = document.querySelector(".switch-langue__langue-list");
+//svg
+const svgClickLng = document.querySelector(".svg-langue-arrow");
+//событие для отображения блока с выбором языка
+svgClickLng.addEventListener("click", e => {
+    e.preventDefault();
+    svgClickLng.classList.add("svg-langue-arrow-active");
+    langueList.classList.remove("hidden");
+});
+langueList.addEventListener("mouseleave", e => {
+    e.preventDefault();
+    svgClickLng.classList.remove("svg-langue-arrow-active");
+    langueList.classList.add("hidden");
+});
+//слушитей для выбора и вставки значения языка
+langueList.addEventListener("mouseup", e => {
+    e.preventDefault();
+
+    if (e.target.classList.contains("switch-langue__langue-p")) {
+        langueActive.innerHTML = e.target.textContent;
+        langueList.classList.add("hidden");
+        svgClickLng.classList.remove("svg-langue-arrow-active");
+    }
+    return;
+});
+
+
+///////////////////// переход к форме по кнопкам
+const contactLinks = document.querySelectorAll(".btns-list__link");
+
+contactLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const href = e.target.getAttribute("href");
+        document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+
+
+
+///////////////////// появление стрелки для прокрутки вверх
+
+const arrowTop = document.querySelector(".scroll-arrow-top");
+const headerA = document.querySelector(".header-a");
+
+const returnObserver = function (entries) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+        arrowTop.classList.remove("hidden");
+    } else {
+        arrowTop.classList.add("hidden");
+    }
+};
+const optionsReturnObserver = {
+    root: null,
+    threshold: 0.1,
+};
+const beginObserver = new IntersectionObserver(returnObserver, optionsReturnObserver);
+beginObserver.observe(headerA);
+
+arrowTop.addEventListener("click", function (e) {
+    console.log(e);
+    headerA.scrollIntoView({ behavior: "smooth" });
+});

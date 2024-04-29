@@ -110,6 +110,9 @@
         gap: 12px;
         &__name {
             color: $white;
+            width: 20px;
+            height: 20px;
+            user-select: none;
         }
     }
     &__link {
@@ -196,4 +199,43 @@
 }
 .svg-langue-arrow {
     cursor: pointer;
+}
+.svg-langue-arrow-active {
+    background-color: $white;
+    width: 25px;
+    fill: $middle-blue;
+    transform: rotate(180deg);
+}
+.switch-langue {
+    // .switch-langue__langue-list
+    position: relative;
+    font-family: $font-machina-reg;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    &__langue-list {
+        position: absolute;
+        text-align: center;
+        width: 25px;
+        top: 44px;
+        right: 0px;
+        margin: 0;
+
+        user-select: none;
+        background-color: $white;
+    }
+
+    // .switch-langue__langue-item
+
+    &__langue-item {
+        background-color: $white;
+    }
+    &__langue-p {
+        margin: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: $middle-blue;
+            color: $white;
+        }
+    }
 }
