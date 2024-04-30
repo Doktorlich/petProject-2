@@ -59,12 +59,9 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 150%;
-        height: 36px;
+      
         overflow: hidden;
-        &:hover {
-            overflow: visible;
-            height: 100%;
-        }
+    
     }
 
     // .work__btn
@@ -80,4 +77,21 @@
 }
 
 .circle-btn {
+}
+@media screen and (max-width: 1080px) {
+    .work__item {
+        width: 100%;
+        max-width: 1000px;
+        height: 294px;
+        padding: 0;
+        padding-top:50px ;
+        padding-left: 50px;
+    }
+    .work__item-title {
+        font-size: 50px;
+    }
+    .work__item-desc {
+        font-size: 46px;
+        margin: 0;
+    }
 }

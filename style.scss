@@ -59,9 +59,9 @@ body {
     &:hover {
         background-color: $dark-blue-opc-70;
     }
+
 }
 .block-hidden-lazy {
-
     opacity: 0;
     transform: translateX(-50%);
     transition: all 1s;

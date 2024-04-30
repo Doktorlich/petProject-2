@@ -1,7 +1,7 @@
 .choose-us {
     // .choose-us__inner
     &__inner {
-        width: 1620px;
+        max-width: 1620px;
     }
     // .choose-us__header-block
     &__header-block {
@@ -33,7 +33,7 @@
         border: 3px solid $dark-blue-opc-14;
         background-color: $dark-blue-opc-14;
         height: 510px;
-       width: 15px;
+        width: 15px;
     }
     &__line-span {
     }
@@ -65,7 +65,7 @@
     // .tab__list-contents
 
     &__list-contents {
-        margin-left:auto ;
+        margin-left: auto;
         width: 1116px;
         height: 459px;
         box-sizing: border-box;
@@ -98,6 +98,8 @@
 
     &__content-desc {
         margin: 0;
+
+        width: 100%;
         color: rgba(47, 53, 63, 0.7);
         font-family: $font-gilroy-reg;
         font-size: 30px;
@@ -127,4 +129,44 @@
 .section {
 }
 .section-h2 {
+}
+@media screen and (max-width: 1080px) {
+    .choose-us__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        display: grid;
+
+        grid-template-areas:
+            "listItems"
+            "listContents";
+
+      
+    }
+    .tab__lines {
+        display: none;
+    }
+    .active-span {
+        height: 15px;
+        width: 60px;
+    }
+    .tab__list-items {
+        grid-area: listItems;
+        flex-direction: row;
+
+        height: 92px;
+        gap: 15px;
+        margin-left: 50px;
+    }
+    .tab__list-contents {
+        grid-area: listContents;
+        margin-left: 0;
+        width: 1000px;
+        height: 738px;
+    }
+    .tab__content-desc {
+        width: 900px;
+    }
 }

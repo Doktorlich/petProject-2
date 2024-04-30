@@ -6,29 +6,29 @@ const peopleItems = document.querySelectorAll(".people__item").forEach(item => {
     transCoef = transCoef + 1;
 });
 
-// const classLazy = document.querySelector(".block-hidden-lazy");
-// const allSection = document.querySelectorAll(".section");
+const classLazy = document.querySelector(".block-hidden-lazy");
+const allSection = document.querySelectorAll(".section");
 
-// const appearanceSection = function (entries, observer) {
-//     const entry = entries[0];
-//     if (!entry.isIntersecting) return;
-//     entry.target.classList.remove("block-hidden-lazy");
-//     entry.target.style.transition = "all 2s";
-//     observer.unobserve(entry.target);
-// };
-// const sectionObserveOptions = {
-//     root: null,
-//     threshold: 0.1,
+const appearanceSection = function (entries, observer) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("block-hidden-lazy");
+    entry.target.style.transition = "all 2s";
+    observer.unobserve(entry.target);
+};
+const sectionObserveOptions = {
+    root: null,
+    threshold: 0.1,
 
-//     // rootMargin: 0,
-// };
+    // rootMargin: 0,
+};
 
-// const sectionObserve = new IntersectionObserver(appearanceSection, sectionObserveOptions);
+const sectionObserve = new IntersectionObserver(appearanceSection, sectionObserveOptions);
 
-// allSection.forEach(section => {
-//     section.classList.add("block-hidden-lazy");
-//     sectionObserve.observe(section);
-// });
+allSection.forEach(section => {
+    section.classList.add("block-hidden-lazy");
+    sectionObserve.observe(section);
+});
 
 const clientLists = document.querySelectorAll(".reviews-client__list");
 const arrowLeft = document.querySelector(".switch__arrow-left");
@@ -109,7 +109,6 @@ langueList.addEventListener("mouseup", e => {
     return;
 });
 
-
 ///////////////////// переход к форме по кнопкам
 const contactLinks = document.querySelectorAll(".btns-list__link");
 
@@ -121,9 +120,6 @@ contactLinks.forEach(link => {
         document.querySelector(href).scrollIntoView({ behavior: "smooth" });
     });
 });
-
-
-
 
 ///////////////////// появление стрелки для прокрутки вверх
 

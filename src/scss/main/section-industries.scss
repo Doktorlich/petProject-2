@@ -2,7 +2,8 @@
     // .industries__inner
 
     &__inner {
-        width: 1620px;
+        width: 100%;
+        max-width: 1620px;
     }
 
     // .industries__list
@@ -10,18 +11,19 @@
     &__list {
         display: flex;
         gap: 51px;
+        flex-wrap: wrap;
     }
 
     // .industries__items
 
     &__items {
         height: 460px;
+        width: 500px;
     }
 
     // .industries__img-item
 
     &__img-item {
-        width: 100px;
         height: 100px;
         border: 1.5px dashed $dark-blue-opc-50;
     }
@@ -60,4 +62,14 @@
 .section {
 }
 .section-h2 {
+}
+@media screen and (max-width: 1080px) {
+    .industries__items{
+        width: 1000px;
+        text-align: center;
+    }
+    .industries__item-title{
+        margin: 0;
+
+    }
 }

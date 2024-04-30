@@ -15,8 +15,38 @@
   <header class="header">
 
     <div class="header__inner">
-
+      <!-- 1080 window -->
       <nav class="nav">
+        <div class="burger">
+          <span class="burger__line-top"></span>
+          <span class="burger__line-middle"></span>
+          <span class="burger__line-bottom"></span>
+        </div>
+        <a class="adapt-logo" href="index.html"><img src="public/images/svg/logo.svg" alt="SUPPORT GROUP"></a>
+        <a href="#with-us" class="btns-list__link btn-adapt">
+          <svg class="img-arrow-link img-arrow-link-adapt" width="24.000000" height="24.000000" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs />
+            <rect id="Icon/Arrow/Button" width="24.000000" height="24.000000" transform="matrix(-1 0 0 1 24 0)"
+              fill="#FFFFFF" fill-opacity="0" />
+            <path id="Vector" d="M20.5 22L3.5 22" stroke="#2e2bd0" stroke-opacity="1.000000" stroke-width="1.500000"
+              stroke-linejoin="round" stroke-linecap="square" />
+            <path id="Vector" d="M18.5 4L5 17.5" stroke="#2e2bd0" stroke-opacity="1.000000" stroke-width="1.500000"
+              stroke-linejoin="round" stroke-linecap="square" />
+            <path id="Vector" d="M19 13.77L19 3.5L8.73 3.5" stroke="#2e2bd0" stroke-opacity="1.000000"
+              stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="square" />
+            <g opacity="0.000000" />
+          </svg>
+        </a>
+        <ul class="menu-adapt__list hidden">
+          <li class="menu-adapt__item"><a href="/src/pages/about/about.html" class="menu-adapt__link">about</a></li>
+          <li class="menu-adapt__item"><a href="#our-services" class="menu-adapt__link">our services</a></li>
+          <li class="menu-adapt__item"><a href="#job-openings" class="menu-adapt__link">job openings</a></li>
+        </ul>
+
+
+
+        <!-- 1920 window -->
         <div class="wrapper-right-border">
           <div class="menu">
             <a href="index.html"><img src="public/images/svg/logo.svg" alt="SUPPORT GROUP"></a>
@@ -195,10 +225,7 @@
             <li class="work__item">
               <p class="work__item-title">Continued technical support</p>
               <p class="work__item-desc">Some words about this step in our work.
-                Some words about this step in our work.
-                Some words about this step in our work.
-                Some words about this step in our work.
-                Some words about this step in our work.
+
               </p>
             </li>
           </ul>
@@ -255,6 +282,49 @@
               <img src="public/images/svg/icon-js.svg" alt="JS" class="technologies__img">
             </div>
           </div>
+
+          <div class="technologies-adaptive__scale">
+            <!-- <hr class="technologies__line"> -->
+            <ul class="technologies-adaptive__list">
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point active-point-adaptive"></span>
+                <p class="technologies-adaptive__title-point active-title-adaptive">Title of the first technology</p>
+                <div class="technologies-adaptive__img-js">
+                  <img src="public/images/svg/icon-js.svg" alt="JS" class="technologies-adaptive__img">
+                </div>
+              </li>
+
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point ">Second technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">Third technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">Forth technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">Fifth technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">sixth technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">seventh technology description</p>
+              </li>
+              <li class="technologies-adaptive__items">
+                <span class="technologies-adaptive__point"></span>
+                <p class="technologies-adaptive__title-point">eighth technology description</p>
+              </li>
+            </ul>
+
+          </div>
         </div>
       </div>
     </section>
@@ -310,33 +380,38 @@
                   src="/public/images/svg/withus-btn-img-1.svg" alt="" class="btn-with-us__img"></span></button>
           </div>
         </div>
-        <form class="with-us__second-block second-block">
+        <form class="with-us__second-block second-block" id="with-us__form">
           <div class="second-block__left-container">
-            <input type="text" class="second-block__full-name second-block__inp" placeholder="Enter your Full Name">
-            <input type="email" class="second-block__email second-block__inp" placeholder="Enter your Email">
-            <input type="tel" class="second-block__tel second-block__inp" placeholder="Enter your Phone Number">
-            <div class="btn-wrapper">
-              <label for="second-block__submit"><img src="/public/images/svg/icon-arrow-blue-button.svg"
-                  class="btn-wrapper__img" alt=""></label>
-              <input type="submit" class="second-block__submit  second-block__inp" value="Submit"
-                name="second-block__submit" id="second-block__submit">
-            </div>
-
+            <input type="text" class="second-block__full-name second-block__inp" placeholder="Enter your Full Name"
+              required>
+            <input type="email" class="second-block__email second-block__inp" placeholder="Enter your Email" required>
+            <input type="tel" class="second-block__tel second-block__inp" placeholder="Enter your Phone Number"
+              required>
 
           </div>
           <div class="second-block__right-container">
             <input type="text" class="second-block__describe  second-block__inp" placeholder="Describe your project">
-
             <div class="upload-btn-wrapper">
               <input type="text" class="second-block__upload-file  second-block__inp"
                 placeholder="Upload archive (max size is 30 MB)" disabled>
-              <img src="public/images/svg/withus-inp-img-1.svg" alt="" class="upload-btn-wrapper__img">
-              <input type="file" class="second-block__upload-file-btn  second-block__inp" style="display:none"
-                name="second-block__upload-file-btn ">
+
+
+              <label for="file-upload" class="custom-file-upload">
+                <input type="file" class="second-block__upload-file-btn  second-block__inp" id="file-upload"
+                  style="display:none" name="second-block__upload-file-btn ">
+                <img src="public/images/svg/withus-inp-img-1.svg" alt="" class="upload-btn-wrapper__img">
+              </label>
             </div>
 
           </div>
+
         </form>
+        <div class="btn-wrapper">
+          <label for="btn-wrapper__submit"><img src="/public/images/svg/icon-arrow-blue-button.svg"
+              class="btn-wrapper__img" alt=""></label>
+          <input type="submit" class="btn-wrapper__submit  btn-wrapper__inp" value="Submit" name="btn-wrapper__submit"
+            id="btn-wrapper__submit" form="with-us__form">
+        </div>
       </div>
     </section>
 

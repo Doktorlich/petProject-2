@@ -89,8 +89,8 @@ const contactLinks = document.querySelectorAll(".btns-list__link");
 contactLinks.forEach(link => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
+        let href = e.target.getAttribute("href");
 
-        const href = e.target.getAttribute("href");
         document.querySelector(href).scrollIntoView({ behavior: "smooth" });
     });
 });
@@ -109,7 +109,6 @@ const returnObserver = function (entries) {
 const optionsReturnObserver = {
     root: null,
     threshold: 0.1,
-   
 };
 const beginObserver = new IntersectionObserver(returnObserver, optionsReturnObserver);
 beginObserver.observe(header);
@@ -117,4 +116,19 @@ beginObserver.observe(header);
 arrowTop.addEventListener("click", function (e) {
     console.log(e);
     header.scrollIntoView({ behavior: "smooth" });
+});
+///////////////////////////////burger
+
+// burger burger-active
+const menuAdaptList = document.querySelector(".menu-adapt__list");
+const burger = document.querySelector(".burger");
+burger.addEventListener("click", function (e) {
+    burger.classList.add("burger-active");
+    burger.style.transition = "all 1s";
+    menuAdaptList.classList.remove("hidden");
+});
+
+menuAdaptList.addEventListener("mouseleave", function (e) {
+    menuAdaptList.classList.add("hidden");
+    burger.classList.remove("burger-active");
 });
