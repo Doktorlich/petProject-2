@@ -70,3 +70,9 @@ body {
     opacity: 0;
     visibility: hidden;
 }
+@media screen and (max-width: 1080px) {
+    .scroll-arrow-top__svg{
+        width: 100px;
+        height: 100px;
+    }
+}

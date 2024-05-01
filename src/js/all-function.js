@@ -92,8 +92,12 @@ contactLinks.forEach(link => {
         let href = e.target.getAttribute("href");
 
         document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+        
     });
 });
+window.addEventListener("click", (e) => {
+    console.log(e.target);
+})
 ///////////////////// появление стрелки для прокрутки вверх
 const arrowTop = document.querySelector(".scroll-arrow-top");
 const header = document.querySelector(".header");

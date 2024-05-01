@@ -1,7 +1,8 @@
 import "./style-about.scss";
 import "/style.scss";
 let transCoef = 0;
-const peopleItems = document.querySelectorAll(".people__item").forEach(item => {
+const peopleItems = document.querySelectorAll(".people__item");
+peopleItems.forEach(item => {
     item.style.transform = `translateX(calc(131px * ${transCoef})) `;
     transCoef = transCoef + 1;
 });
@@ -144,4 +145,20 @@ beginObserver.observe(headerA);
 arrowTop.addEventListener("click", function (e) {
     console.log(e);
     headerA.scrollIntoView({ behavior: "smooth" });
+});
+
+///////////////////////////////burger
+
+// burger burger-active
+const menuAdaptList = document.querySelector(".menu-adapt__list");
+const burger = document.querySelector(".burger");
+burger.addEventListener("click", function (e) {
+    burger.classList.add("burger-active");
+    burger.style.transition = "all 1s";
+    menuAdaptList.classList.remove("hidden");
+});
+
+menuAdaptList.addEventListener("mouseleave", function (e) {
+    menuAdaptList.classList.add("hidden");
+    burger.classList.remove("burger-active");
 });

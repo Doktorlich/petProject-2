@@ -2,7 +2,8 @@
     margin: 0 30px;
     margin-bottom: 300px;
     &__inner {
-        width: 1860px;
+        width: 100%;
+        max-width: 1860px;
         .section-h2 {
             margin: 0 120px;
         }
@@ -39,6 +40,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         &__item {
@@ -77,6 +79,24 @@
             background-color: $main-blue;
         }
     }
+    @media screen and (max-width: 1080px) {
+        .peculiarities {
+            width: 1000px;
+          
+         
+            &__item {
+                width: 1000px;
+                margin-bottom: 50px;
+           
+               
+            }
+        }
+        .peculiarities__vert-line{
+            display: none;
+           
+           
+        }
+    }
 }
 //2 блок
 .section-desc {
@@ -90,4 +110,26 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
+}
+@media screen and (max-width: 1080px) {
+    .team{
+        margin-bottom: 600px !important;
+    }
+    .section-desc {
+        margin-left: 120px;
+    }
+    .team__img-block {
+        width: 1000px;
+        height: 615px;
+        &::before {
+            content: "";
+            width: 100px;
+            height: 615px;
+            border: none;
+        }
+    }
+    .team__img {
+        width: 1000px;
+        height: 615px;
+    }
 }

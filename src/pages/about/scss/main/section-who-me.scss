@@ -1,13 +1,15 @@
 .who-me {
     margin-bottom: 300px;
     &__inner {
-        width: 1620px;
+        width: 100%;
+        max-width: 1620px;
     }
 
     &__main {
         display: flex;
         justify-content: space-between;
         margin-bottom: 200px;
+        flex-wrap: wrap;
     }
     //--------------------------------- 2й блок
     &__desc {
@@ -26,7 +28,8 @@
         line-height: 150%;
     }
     .achievements {
-        width: 716px;
+        width: 100%;
+        max-width: 716px;
         &__list {
             display: flex;
             flex-wrap: wrap;
@@ -82,6 +85,9 @@
         &__list {
             display: flex;
             position: relative;
+            max-width: 1620px;
+            height: 180px;
+            flex-wrap: wrap;
         }
 
         &__item {
@@ -103,6 +109,41 @@
         }
 
         &__img {
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .who-me__main {
+            width: 1000px;
+        }
+        .achievements {
+            margin-top: 50px;
+            &__item {
+                width: 1000px;
+            }
+            &__item-active {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                border: 1px solid $middle-grey;
+                border-radius: 40px;
+                padding: 50px 0px 50px 50px;
+            }
+        }
+        .people {
+            width: 1000px !important;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__item {
+            }
         }
     }
 }

@@ -1,2 +1,2 @@
 import "./style.scss";
-import "./src/js/no-name.js";
+import "./src/js/all-function";

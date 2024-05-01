@@ -2,23 +2,24 @@
 }
 
 .with-us {
-    margin-left: 30px;
+    margin: 0 30px;
     // .with-us__inner
 
     &__inner {
-        width: 1860px;
+        width: 100%;
+        max-width: 1860px;
         background: $gradient-blue-blue;
         padding: 100px 120px;
         border-radius: 70px;
     }
     // .with-us__first-block
     &__first-block {
-        display: flex;
-        justify-content: space-between;
     }
     .first-block {
         // .first-block__h2
-      
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         &__h2 {
             color: $white;
             font-family: $font-machina-reg;
@@ -35,7 +36,8 @@
         }
         // .first-block__desc
         &__desc {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             height: 180px;
 
             color: $white;
@@ -55,7 +57,9 @@
         justify-content: center;
         align-items: center;
         gap: 22px;
-        width: 350px;
+
+        width: 100%;
+        max-width: 350px;
         height: 58px;
         text-transform: uppercase;
         color: $white;
@@ -91,6 +95,7 @@
         display: flex;
         justify-content: space-between;
 
+        flex-wrap: wrap;
         &__left-container {
             display: flex;
             flex-direction: column;
@@ -125,41 +130,7 @@
         &__tel {
         }
         // .second-block__submit
-        .btn-wrapper {
-            position: relative;
-            width: 205px;
-            height: 58px;
-            .btn-wrapper__img {
-                position: absolute;
-                width: 24px;
-                height: 24px;
-                right: 40px;
-                top: 17px;
-                border: 1px dashed $main-blue;
-            }
-        }
 
-        &__submit {
-            padding: 17px 40px;
-            width: 205px;
-            height: 58px;
-            border-radius: 10px;
-            background: $white;
-
-            color: $main-blue;
-            font-family: $font-machina-reg;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 19px;
-            cursor: pointer;
-            text-transform: uppercase;
-            text-align: left;
-            &:active {
-                background-color: $main-blue;
-                color: $white;
-                border: 1px solid $white;
-            }
-        }
         // .second-block__right-container
         &__right-container {
             display: flex;
@@ -178,7 +149,7 @@
         }
         .upload-btn-wrapper {
             position: relative;
-
+            width: 700px;
             &__img {
                 position: absolute;
                 right: 10px;
@@ -193,9 +164,63 @@
 }
 
 b .span-mail {
- 
     color: $white;
     font-family: $font-gilroy-reg;
     text-decoration: underline;
+}
 
+/* Стилизовать кнопку, псевдоэлемент и текст */
+
+.btn-wrapper {
+    position: relative;
+    margin-top: 50px;
+    width: 205px;
+    height: 58px;
+    .btn-wrapper__img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 40px;
+        top: 17px;
+        border: 1px dashed $main-blue;
+    }
+}
+.btn-wrapper {
+}
+.btn-wrapper__submit {
+    padding: 17px 40px;
+    width: 205px;
+    height: 58px;
+    border-radius: 10px;
+    background: $white;
+
+    color: $main-blue;
+    font-family: $font-machina-reg;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: left;
+    &:active {
+        background-color: $main-blue;
+        color: $white;
+        border: 1px solid $white;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .first-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-block {
+        flex-direction: column;
+       
+        align-items: center;
+        gap: 50px;
+    }
+    .with-us__inner {
+    
+        padding: 60px;
+    }
 }
